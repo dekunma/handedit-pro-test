@@ -46,7 +46,8 @@
     "start:main": "cross-env NODE_ENV=development electronmon -r ts-node/register/transpile-only .",
     "start:preload": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack --config ./.erb/configs/webpack.config.preload.dev.ts",
     "start:renderer": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack serve --config ./.erb/configs/webpack.config.renderer.dev.ts",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "browserslist": [],
   "prettier": {
@@ -168,7 +169,8 @@
     "webpack-bundle-analyzer": "^4.9.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
-    "webpack-merge": "^5.9.0"
+    "webpack-merge": "^5.9.0",
+    "husky": "^8.0.0"
   },
   "build": {
     "productName": "ElectronReact",
